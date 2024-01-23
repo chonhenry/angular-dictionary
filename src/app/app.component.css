@@ -1,3 +1,19 @@
+:host {
+  --black-one: #050505;
+  --black-two: #1f1f1f;
+  --black-three: #2d2d2d;
+
+  --grey-one: #3a3a3a;
+  --grey-two: #757575;
+  --grey-three: #e9e9e9;
+  --grey-four: #f4f4f4;
+
+  --white: #ffffff;
+
+  --purple: #a445ed;
+  --red: #ff5252;
+}
+
 @font-face {
   font-family: "inconsolata";
   src: url("../assets/fonts/inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
@@ -11,4 +27,18 @@
 @font-face {
   font-family: "lora";
   src: url("../assets/fonts/lora/Lora-VariableFont_wght.ttf");
+}
+
+.text-1 {
+  font-family: "inconsolata";
+}
+
+.text-2 {
+  font-family: "inter";
+  color: var(--red);
+}
+
+.text-3 {
+  font-family: "lora";
+  color: var(--purple);
 }
