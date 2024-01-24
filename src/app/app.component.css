@@ -1,4 +1,4 @@
-:host {
+/* :host {
   --black-one: #050505;
   --black-two: #1f1f1f;
   --black-three: #2d2d2d;
@@ -12,9 +12,9 @@
 
   --purple: #a445ed;
   --red: #ff5252;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "inconsolata";
   src: url("../assets/fonts/inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
 }
@@ -27,7 +27,7 @@
 @font-face {
   font-family: "lora";
   src: url("../assets/fonts/lora/Lora-VariableFont_wght.ttf");
-}
+} */
 
 .text-1 {
   font-family: "inconsolata";
@@ -41,4 +41,13 @@
 .text-3 {
   font-family: "lora";
   color: var(--purple);
+}
+
+.container {
+  border: 1px solid red;
+  background-color: var(--main-content-background-color);
+}
+
+.heading {
+  color: var(--main-content-text-color);
 }

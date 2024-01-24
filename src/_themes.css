@@ -1,6 +1,4 @@
-/* @import "_themes.css"; */
-
-[data-theme="light"] {
+/* [data-theme="light"] {
   --header-background-color: #ffffff;
   --header-border-color: #e5e8ea;
   --header-menu-item-color: #231f20;
@@ -53,4 +51,4 @@
 @font-face {
   font-family: "lora";
   src: url("./assets/fonts/lora/Lora-VariableFont_wght.ttf");
-}
+} */
