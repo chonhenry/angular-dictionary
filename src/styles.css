@@ -54,3 +54,15 @@
   font-family: "lora";
   src: url("./assets/fonts/lora/Lora-VariableFont_wght.ttf");
 }
+
+[font-theme="inconsolata"] {
+  --font: "inconsolata";
+}
+
+[font-theme="inter"] {
+  --font: "inter";
+}
+
+[font-theme="lora"] {
+  --font: "lora";
+}

@@ -20,3 +20,7 @@
 .heading {
   color: var(--main-content-text-color);
 }
+
+.title-1 {
+  font-family: var(--font);
+}

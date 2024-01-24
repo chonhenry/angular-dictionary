@@ -15,4 +15,5 @@
 .heading-1 {
   background-color: var(--main-content-background-color);
   color: var(--main-content-text-color);
+  font-family: var(--font);
 }

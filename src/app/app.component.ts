@@ -16,6 +16,10 @@ export class AppComponent {
       this.isLightTheme ? 'light' : 'dark'
     );
   }
+
+  onSetFontTheme(font: string) {
+    document.body.setAttribute('font-theme', font);
+  }
 }
 
 // https://codebeyondlimits.com/articles/angular-theming-how-to-create-a-dynamic-theme-switcher-for-light-and-dark-mode
