@@ -1,22 +1,18 @@
-.text-1 {
+.title-1 {
   font-family: "inconsolata";
 }
 
-.text-2 {
+.title-2 {
   font-family: "inter";
   color: var(--red);
 }
 
-.text-3 {
+.title-3 {
   font-family: "lora";
   color: var(--purple);
 }
 
-.container {
-  border: 1px solid red;
+.heading-1 {
   background-color: var(--main-content-background-color);
-}
-
-.heading {
   color: var(--main-content-text-color);
 }
