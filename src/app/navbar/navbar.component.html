@@ -3,12 +3,19 @@
     <img src="../../assets/images/logo.svg" alt="logo" />
   </div>
   <div class="navbar-btns">
-    <div class="select-font">Sans Serif</div>
-    <img
-      class="arrow-down"
-      src="../../assets/images/icon-arrow-down.svg"
-      alt="arrow-down"
-    />
+    <div class="arrow-down-wrapper">
+      <div class="select-font">{{ font }}</div>
+      <img
+        (click)="onDropdownClick()"
+        class="arrow-down"
+        src="../../assets/images/icon-arrow-down.svg"
+        alt="arrow-down"
+      />
+      <app-dropdown
+        *ngIf="isDropdownOpen"
+        (selectFontEvent)="onSetFontTheme($event)"
+      ></app-dropdown>
+    </div>
     <div class="divider"></div>
     <div class="switch-theme">
       <img
@@ -28,7 +35,3 @@
     </div>
   </div>
 </nav>
-
-<!-- <button (click)="onSetFontTheme('sans-serif')">sans-serif</button>
-<button (click)="onSetFontTheme('serif')">serif</button>
-<button (click)="onSetFontTheme('mono')">mono</button> -->

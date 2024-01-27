@@ -1,0 +1,14 @@
+import { Component, Output, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-dropdown',
+  templateUrl: './dropdown.component.html',
+  styleUrl: './dropdown.component.css',
+})
+export class DropdownComponent {
+  @Output() selectFontEvent = new EventEmitter<string>();
+
+  selectFont(value: string) {
+    this.selectFontEvent.emit(value);
+  }
+}

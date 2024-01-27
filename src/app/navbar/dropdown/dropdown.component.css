@@ -1,0 +1,38 @@
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 95px;
+  border: 1px solid var(--quaternary-color);
+  padding: 10px;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+.sans-serif,
+.serif,
+.mono {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sans-serif {
+  font-family: "sans-serif";
+}
+
+.serif {
+  font-family: "inserifter";
+}
+
+.mono {
+  font-family: "mono";
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--quaternary-color);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
