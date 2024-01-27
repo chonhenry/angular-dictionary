@@ -1,4 +1,21 @@
-.text-1 {
+.container {
+  width: 760px;
+  margin: auto;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  .container {
+    width: 689px;
+  }
+}
+
+@media (max-width: 374px) {
+  .container {
+    width: 327px;
+  }
+}
+
+/* .text-1 {
   font-family: "inconsolata";
 }
 
@@ -23,4 +40,7 @@
 
 .title-1 {
   font-family: var(--font);
-}
+} */
+
+/* 689 */
+/* 327 */

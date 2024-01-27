@@ -1,57 +1,8 @@
-/* @import "_themes.css"; */
+@import "_themes.css";
 
-[data-theme="light"] {
-  --primary-color: #050505;
-  --secondary-color: #1f1f1f;
-  --tertiary-color: #2d2d2d;
-  --quaternary-color: #3a3a3a;
-}
-
-[data-theme="dark"] {
-  --primary-color: #757575;
-  --secondary-color: #e9e9e9;
-  --tertiary-color: #f4f4f4;
-  --quaternary-color: #ffffff;
-}
-
-:root {
-  /* --black-one: #050505;
-  --black-two: #1f1f1f;
-  --black-three: #2d2d2d;
-  --grey-one: #3a3a3a;
-
-  --grey-two: #757575;
-  --grey-three: #e9e9e9;
-  --grey-four: #f4f4f4;
-  --white: #ffffff; */
-
-  --purple: #a445ed;
-  --red: #ff5252;
-}
-
-@font-face {
-  font-family: "mono";
-  src: url("./assets/fonts/inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
-}
-
-@font-face {
-  font-family: "sans-serif";
-  src: url("./assets/fonts/inter/Inter-VariableFont_slnt\,wght.ttf");
-}
-
-@font-face {
-  font-family: "serif";
-  src: url("./assets/fonts/lora/Lora-VariableFont_wght.ttf");
-}
-
-[font-theme="mono"] {
-  --font: "mono";
-}
-
-[font-theme="sans-serif"] {
-  --font: "sans-serif";
-}
-
-[font-theme="serif"] {
-  --font: "serif";
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-family: var(--font);
+  margin: 0;
 }

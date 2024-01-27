@@ -1,0 +1,39 @@
+.navbar {
+  /* background-color: lightgray; */
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-font {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.arrow-down {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.divider {
+  background-color: var(--quaternary-color);
+  width: 1px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.switch-theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
