@@ -1,5 +1,4 @@
-import { Component, Input, ViewChild, ElementRef } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
+import { Component, Input } from '@angular/core';
 import { DictionaryResponse } from '../service/search/search.service';
 
 @Component({
