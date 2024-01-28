@@ -1,0 +1,19 @@
+<div class="definition-container">
+  <div class="word-wrapper">
+    <div class="">
+      <h1 class="definitions-word">{{ definitions.word }}</h1>
+      <div class="definitions-phonetic">{{ getPhoneticText() }}</div>
+    </div>
+    <button (click)="onPlayBtnClick()" class="play-btn">
+      <img
+        class="play-btn-icon"
+        src="../../assets/images/icon-play.svg"
+        alt="play phonetic"
+      />
+    </button>
+
+    <audio #audioPlayer>
+      <source [src]="getPhoneticAudio()" type="audio/mpeg" />
+    </audio>
+  </div>
+</div>

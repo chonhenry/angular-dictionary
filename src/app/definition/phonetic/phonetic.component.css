@@ -1,0 +1,64 @@
+.definition-container {
+  margin-top: 40px;
+}
+
+.word-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.definitions-word {
+  margin: 0;
+  font-size: 64px;
+}
+
+.definitions-phonetic {
+  color: var(--purple);
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.play-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.play-btn-icon {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .definitions-word {
+    font-size: 40px;
+  }
+
+  .definitions-phonetic {
+    font-size: 15px;
+  }
+
+  .play-btn,
+  .play-btn-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .definitions-word {
+    font-size: 30px;
+  }
+
+  .definitions-phonetic {
+    font-size: 12px;
+  }
+
+  .play-btn,
+  .play-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

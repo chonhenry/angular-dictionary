@@ -6,28 +6,27 @@ import { Observable } from 'rxjs';
 
 export interface DictionaryResponse {
   word: string;
-  phonetics: Phonetics[] | string;
-  meanings: Meangings[];
+  phonetics: Phonetics[];
+  meanings: Meaning[];
   license: License;
   sourceUrls: string[];
 }
 
-interface Phonetics {
-  text: string;
+export interface Phonetics {
+  text?: string;
   audio: string;
-  sourceUrl: string;
-  license: {
+  sourceUrl?: string;
+  license?: {
     name: string;
     url: string;
   };
 }
 
-interface Meangings {
+export interface Meaning {
   partOfSpeech: string;
   definitions: {
     definition: string;
-    synonyms: string[];
-    antonyms: string[];
+    example?: string;
   }[];
   synonyms: string[];
   antonyms: string[];

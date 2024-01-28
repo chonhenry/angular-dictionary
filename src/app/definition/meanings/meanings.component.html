@@ -1,0 +1,19 @@
+<div class="meanings-container">
+  <div *ngFor="let meaning of meanings" class="meaning-container">
+    <div class="part-of-speech-wrapper">
+      <div class="part-of-speech-text">{{ meaning.partOfSpeech }}</div>
+      <div class="part-of-speech-line"></div>
+    </div>
+    <div class="meaning-title">Meaning</div>
+
+    <ul *ngFor="let def of meaning.definitions" class="">
+      <li>
+        <div class="">{{ def.definition }}</div>
+        <div *ngIf="def.example" class="def-example">
+          {{ '"' + def.example + '"' }}
+        </div>
+        <!-- <div class="def-example">this is an example</div> -->
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+.meanings-container {
+  margin-top: 40px;
+}
+
+.meaning-container {
+  margin-bottom: 40px;
+}
+
+.part-of-speech-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.part-of-speech-text {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+.part-of-speech-line {
+  height: 1px;
+  background-color: var(--quaternary-color);
+  flex: 1;
+}
+
+.meaning-title {
+  color: var(--secondary-color);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+li::marker {
+  color: var(--purple);
+}
+
+.def-example {
+  color: var(--secondary-color);
+  margin-top: 7px;
+  margin-bottom: 15px;
+}

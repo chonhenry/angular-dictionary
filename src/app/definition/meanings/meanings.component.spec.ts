@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HelloComponent } from './hello.component';
+import { MeaningsComponent } from './meanings.component';
 
-describe('HelloComponent', () => {
-  let component: HelloComponent;
-  let fixture: ComponentFixture<HelloComponent>;
+describe('MeaningsComponent', () => {
+  let component: MeaningsComponent;
+  let fixture: ComponentFixture<MeaningsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HelloComponent]
+      declarations: [MeaningsComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(HelloComponent);
+    fixture = TestBed.createComponent(MeaningsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -14,7 +14,9 @@ export class AppComponent {
   error = false;
   definitions: DictionaryResponse | null = null;
 
-  constructor(private searchService: SearchService) {}
+  constructor(private searchService: SearchService) {
+    this.onSearch('keyboard');
+  }
 
   onSearch(word: string) {
     this.isLoading = true;
@@ -25,7 +27,6 @@ export class AppComponent {
         this.definitions = response[0];
       },
       (error) => {
-        console.log(error);
         this.isLoading = false;
         this.error = true;
         this.definitions = null;
