@@ -4,6 +4,7 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Local Development](#local-development)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -26,9 +27,22 @@ Users should be able to:
 - Switch between light and dark themes
 - View the optimal layout for the interface depending on their device's screen size
 
+### Local Development
+Clone down this repository. You will need [`angular-cli`](https://angular.io/cli) and `npm` installed globally on your machine.  
+
+Installation:
+`npm install`  
+
+To Start Server:
+`ng serve`  
+
+To Visit App:
+`localhost:4200`
+
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./light.png)
+![](./dark.png)
 
 ### Links
 
