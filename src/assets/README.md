@@ -1,12 +1,15 @@
 # Dictionary web app
 
+![](./light.png)
+![](./dark.png)
+
+[Live Site URL](https://github.com/chonhenry/angular-dictionary)
+
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Local Development](#local-development)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -28,25 +31,17 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 
 ### Local Development
-Clone down this repository. You will need [`angular-cli`](https://angular.io/cli) and `npm` installed globally on your machine.  
+
+Clone down this repository. You will need [`angular-cli`](https://angular.io/cli) and `npm` installed globally on your machine.
 
 Installation:
-`npm install`  
+`npm install`
 
 To Start Server:
-`ng serve`  
+`ng serve`
 
 To Visit App:
 `localhost:4200`
-
-### Screenshot
-
-![](./light.png)
-![](./dark.png)
-
-### Links
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -67,7 +62,9 @@ First I added the `data-theme="light"` attribute to the `<body>` element in the 
   <app-root></app-root>
 </body>
 ```
+
 Then I configured the colors for both light and dark theme in the `_theme.css` file and import it in `styles.css`.
+
 ```css
 [data-theme="light"] {
   --background-color: #ffffff;
@@ -85,6 +82,7 @@ Then I configured the colors for both light and dark theme in the `_theme.css` f
   --quaternary-color: #3a3a3a;
 }
 ```
+
 ```css
 @import "_themes.css";
 
@@ -93,7 +91,9 @@ body {
   color: var(--primary-color);
 }
 ```
+
 In `navbar.component.ts`, I initialized the `isLightTheme` varibale and added the `onThemeSwitchChange()` function, which will be triggered every time the theme switcher is toggled.
+
 ```js
 public isLightTheme = true;
 onThemeSwitchChange() {
@@ -104,25 +104,16 @@ onThemeSwitchChange() {
   );
 }
 ```
+
 Now I just have to add this function to the theme toggle icon in `navbar.component.html` so when the icon is clicked, the theme will be toggled.
+
 ```html
 <div class="switch-theme">
-  <img
-    *ngIf="isLightTheme"
-    (click)="onThemeSwitchChange()"
-    class="moon"
-    src="../../assets/images/icon-moon.svg"
-    alt="moon"
-  />
-  <img
-    *ngIf="!isLightTheme"
-    (click)="onThemeSwitchChange()"
-    class="sun"
-    src="../../assets/images/icon-sun.svg"
-    alt="sun"
-  />
+  <img *ngIf="isLightTheme" (click)="onThemeSwitchChange()" class="moon" src="../../assets/images/icon-moon.svg" alt="moon" />
+  <img *ngIf="!isLightTheme" (click)="onThemeSwitchChange()" class="sun" src="../../assets/images/icon-sun.svg" alt="sun" />
 </div>
 ```
+
 ## Author
 
 - [My Website](https://www.henrychon.com/)
