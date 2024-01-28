@@ -21,7 +21,6 @@ input:focus {
 }
 
 .submit-btn {
-  /* background-color: var(--purple); */
   position: absolute;
   background-color: transparent;
   right: 0;

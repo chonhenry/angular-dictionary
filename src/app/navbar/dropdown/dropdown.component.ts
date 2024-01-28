@@ -10,7 +10,7 @@ export class DropdownComponent {
   isLightTheme = true;
 
   @Output()
-  selectFontEvent = new EventEmitter<string>();
+  selectFontEvent = new EventEmitter();
 
   selectFont(value: string) {
     this.selectFontEvent.emit(value);

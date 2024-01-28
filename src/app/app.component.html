@@ -1,26 +1,24 @@
 <div class="container">
   <app-navbar></app-navbar>
-  <app-search-box></app-search-box>
+  <app-search-box (onSearchEvent)="onSearch($event)"></app-search-box>
+
+  <h2 class="get-started" *ngIf="definitions === null && !error && !isLoading">
+    Type a word in the search box to get started.
+  </h2>
+
+  <div *ngIf="isLoading" class="loader-wrapper">
+    <span class="loader"></span>
+    <div class="">Searching...</div>
+  </div>
+
+  <div *ngIf="error && !isLoading" class="error">
+    <h3>No Definitions Found</h3>
+    <p>
+      Sorry pal, we couldn't find definitions for the word you were looking for.
+    </p>
+  </div>
+
+  <div *ngIf="definitions && !isLoading" class="">definitions</div>
 </div>
-<!-- <button (click)="onSetFontTheme('sans-serif')">sans-serif</button>
-<button (click)="onSetFontTheme('serif')">serif</button>
-<button (click)="onSetFontTheme('mono')">mono</button> -->
-
-<!-- <div class="text-1">hello world</div>
-<div class="text-2">hello world</div>
-<div class="text-3">hello world</div>
-
-<button (click)="onSetFontTheme('sans-serif')">sans-serif</button>
-<button (click)="onSetFontTheme('serif')">serif</button>
-<button (click)="onSetFontTheme('mono')">mono</button>
-<h1 class="title-1">Aliquam</h1>
-
-<hr />
-<div class="container">
-  <button (click)="onThemeSwitchChange()">
-    {{ isLightTheme ? "light" : "dark" }}
-  </button>
-  <h1 class="heading">Welcome to Code Beyond Limits</h1>
-</div> -->
 
 <!-- <router-outlet /> -->

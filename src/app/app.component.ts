@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import {
+  SearchService,
+  DictionaryResponse,
+} from './service/search/search.service';
 
 @Component({
   selector: 'app-root',
@@ -6,15 +10,26 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  // public isLightTheme = true;
-  // onThemeSwitchChange() {
-  //   this.isLightTheme = !this.isLightTheme;
-  //   document.body.setAttribute(
-  //     'data-theme',
-  //     this.isLightTheme ? 'light' : 'dark'
-  //   );
-  // }
-  // onSetFontTheme(font: string) {
-  //   document.body.setAttribute('font-theme', font);
-  // }
+  isLoading = false;
+  error = false;
+  definitions: DictionaryResponse | null = null;
+
+  constructor(private searchService: SearchService) {}
+
+  onSearch(word: string) {
+    this.isLoading = true;
+    this.searchService.search(word).subscribe(
+      (response) => {
+        this.isLoading = false;
+        this.error = false;
+        this.definitions = response[0];
+      },
+      (error) => {
+        console.log(error);
+        this.isLoading = false;
+        this.error = true;
+        this.definitions = null;
+      }
+    );
+  }
 }
