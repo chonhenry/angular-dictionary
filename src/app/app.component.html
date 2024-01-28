@@ -2,10 +2,6 @@
   <app-navbar></app-navbar>
   <app-search-box (onSearchEvent)="onSearch($event)"></app-search-box>
 
-  <!-- <h2 class="get-started" *ngIf="definitions === null && !error && !isLoading">
-    Type a word in the search box to get started.
-  </h2> -->
-
   <div *ngIf="isLoading" class="loader-wrapper">
     <span class="loader"></span>
     <div class="">Searching...</div>
@@ -22,5 +18,3 @@
     <app-definition [definitions]="definitions"></app-definition>
   </div>
 </div>
-
-<!-- <router-outlet /> -->

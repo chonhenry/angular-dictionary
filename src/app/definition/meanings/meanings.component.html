@@ -7,7 +7,7 @@
     <div class="meaning-title">Meaning</div>
 
     <ul *ngFor="let def of meaning.definitions" class="">
-      <li>
+      <li class="def-item">
         <div class="">{{ def.definition }}</div>
         <div *ngIf="def.example" class="def-example">
           {{ '"' + def.example + '"' }}

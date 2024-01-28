@@ -1,0 +1,39 @@
+.source-container {
+  border-top: 1px solid var(--quaternary-color);
+  padding-top: 25px;
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.source-title {
+  color: var(--secondary-color);
+  margin-right: 20px;
+}
+
+.source-url-wrapper {
+  display: flex;
+}
+
+.source-url {
+  margin-right: 10px;
+}
+
+.source-link {
+  padding-top: 1px;
+}
+
+.source-icon {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .source-container {
+    flex-direction: column;
+  }
+
+  .source-title {
+    margin-bottom: 5px;
+    text-decoration: underline var(--secondary-color);
+  }
+}

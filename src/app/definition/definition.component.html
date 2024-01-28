@@ -1,2 +1,18 @@
 <app-phonetic [definitions]="definitions"></app-phonetic>
 <app-meanings [meanings]="definitions.meanings"></app-meanings>
+<div class="source-container">
+  <div class="source-title">Source</div>
+  <div class="source-url-wrapper">
+    <div class="source-url">{{ getSourceUrl() }}</div>
+    <a
+      class="source-link"
+      href="{{ getSourceUrl() }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><img
+        class="source-icon"
+        src="../../assets/images/icon-new-window.svg"
+        alt="source icon"
+    /></a>
+  </div>
+</div>

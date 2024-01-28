@@ -15,7 +15,7 @@ export class AppComponent {
   definitions: DictionaryResponse | null = null;
 
   constructor(private searchService: SearchService) {
-    this.onSearch('keyboard');
+    this.onSearch('hello');
   }
 
   onSearch(word: string) {

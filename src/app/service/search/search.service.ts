@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-// https://api.dictionaryapi.dev/api/v2/entries/en/hello
-
 export interface DictionaryResponse {
   word: string;
   phonetics: Phonetics[];
