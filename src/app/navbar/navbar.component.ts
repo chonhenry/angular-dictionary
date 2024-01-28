@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   public font: string = 'Sans Serif';
   public isLightTheme = true;
-  public isDropdownOpen = false;
+  public isDropdownOpen = true;
 
   onDropdownClick() {
     this.isDropdownOpen = !this.isDropdownOpen;

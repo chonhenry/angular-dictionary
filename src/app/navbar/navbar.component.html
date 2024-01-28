@@ -14,6 +14,7 @@
       <app-dropdown
         *ngIf="isDropdownOpen"
         (selectFontEvent)="onSetFontTheme($event)"
+        [isLightTheme]="isLightTheme"
       ></app-dropdown>
     </div>
     <div class="divider"></div>

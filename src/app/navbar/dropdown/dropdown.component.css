@@ -1,22 +1,32 @@
 .dropdown {
   position: absolute;
-  background-color: var(--background-color);
-  right: 0;
+  right: 25px;
   top: 25px;
-  width: 95px;
-  border: 1px solid var(--quaternary-color);
-  padding: 10px;
+  width: 150px;
+  padding: 20px;
   border-radius: 7px;
   box-sizing: border-box;
   z-index: 10;
 }
 
-.sans-serif,
-.serif,
-.mono {
+.shadow-light {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--background-color);
+}
+
+.shadow-dark {
+  box-shadow: rgba(164, 69, 237, 0.2) 0px 7px 29px 0px;
+  background-color: var(--tertiary-color);
+}
+
+.dropdown-tiem {
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
+}
+
+.dropdown-tiem:hover {
+  color: var(--purple);
 }
 
 .sans-serif {
@@ -25,6 +35,8 @@
 
 .serif {
   font-family: "inserifter";
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .mono {

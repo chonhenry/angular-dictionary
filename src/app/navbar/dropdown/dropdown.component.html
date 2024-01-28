@@ -1,7 +1,7 @@
-<div class="dropdown">
-  <div class="sans-serif" (click)="selectFont('sans-serif')">Sans Serif</div>
-  <div class="divider"></div>
-  <div class="serif" (click)="selectFont('serif')">Serif</div>
-  <div class="divider"></div>
-  <div class="mono" (click)="selectFont('mono')">Mono</div>
+<div class="dropdown" [ngClass]="isLightTheme ? 'shadow-light' : 'shadow-dark'">
+  <div class="sans-serif dropdown-tiem" (click)="selectFont('sans-serif')">
+    Sans Serif
+  </div>
+  <div class="serif dropdown-tiem" (click)="selectFont('serif')">Serif</div>
+  <div class="mono dropdown-tiem" (click)="selectFont('mono')">Mono</div>
 </div>

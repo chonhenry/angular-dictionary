@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown',
@@ -6,7 +6,11 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrl: './dropdown.component.css',
 })
 export class DropdownComponent {
-  @Output() selectFontEvent = new EventEmitter<string>();
+  @Input()
+  isLightTheme = true;
+
+  @Output()
+  selectFontEvent = new EventEmitter<string>();
 
   selectFont(value: string) {
     this.selectFontEvent.emit(value);
