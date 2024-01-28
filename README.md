@@ -3,8 +3,6 @@
 ![](./src/assets/light.png)
 ![](./src/assets/dark.png)
 
-[Live Site URL](https://github.com/chonhenry/angular-dictionary)
-
 ## Table of contents
 
 - [Overview](#overview)
