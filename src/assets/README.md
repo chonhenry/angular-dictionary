@@ -1,7 +1,6 @@
 # Dictionary web app
 
-![](./light.png)
-![](./dark.png)
+![](./light.png) ![](./dark.png)
 
 [Live Site URL](https://github.com/chonhenry/angular-dictionary)
 
