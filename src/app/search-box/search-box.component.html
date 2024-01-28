@@ -1,0 +1,12 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <input
+    type="text"
+    name="word"
+    ngModel
+    required
+    placeholder="Search for any word..."
+  />
+  <button class="submit-btn">
+    <img src="../../assets/images/icon-search.svg" alt="search" />
+  </button>
+</form>
